@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Reputation</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Standing</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="faction in character.reputation">
+                    <td>{{faction.id}}</td>
+                    <td>{{faction.name}}</td>
+                    <td>
+                        <span ng-switch on="faction.standing">
+                            <span ng-switch-when="0" style="color: #a00000;">Hated</span>
+                            <span ng-switch-when="1" style="color: #a00000;">Hostile</span>
+                            <span ng-switch-when="2" style="color: #a00000;">Unfriendly</span>
+                            <span ng-switch-when="3" style="color: #d2ac00;">Neutral</span>
+                            <span ng-switch-when="4" style="color: #51ab01;">Friendly</span>
+                            <span ng-switch-when="5" style="color: #51ab01;">Honored</span>
+                            <span ng-switch-when="6" style="color: #51ab01;">Revered</span>
+                            <span ng-switch-when="7" style="color: #00be70;">Exalted</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span ng-switch on="faction.standing">
+                            <span ng-switch-when="0" style="color: #a00000;"><progressbar max="faction.max" value="faction.value" type="danger">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="1" style="color: #a00000;"><progressbar max="faction.max" value="faction.value" type="danger">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="2" style="color: #a00000;"><progressbar max="faction.max" value="faction.value" type="danger">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="3" style="color: #d2ac00;"><progressbar max="faction.max" value="faction.value" type="warning">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="4" style="color: #51ab01;"><progressbar max="faction.max" value="faction.value" type="info">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="5" style="color: #51ab01;"><progressbar max="faction.max" value="faction.value" type="info">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="6" style="color: #51ab01;"><progressbar max="faction.max" value="faction.value" type="info">{{faction.value}} / {{faction.max}}</progressbar></span>
+                            <span ng-switch-when="7" style="color: #00be70;"><progressbar max="faction.max" value="faction.value" type="success">{{faction.value}} / {{faction.max}}</progressbar></span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

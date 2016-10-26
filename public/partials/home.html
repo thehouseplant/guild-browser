@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Guild Activity</h3>
+        <div ng-show="loading">
+            <p class="text-center" style="margin-top:150px;">
+                <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </p>
+        </div>
+        <div ng-show="!loading">
+            <ul class="fa-ul">
+                <li ng-repeat="item in news">
+                    <p>
+                        <i class="fa fa-long-arrow-right"></i> <a ui-sref="character.general({characterName: item.character})">{{item.character}}</a> has
+                        <span ng-switch on="item.type">
+                            <span ng-switch-when="itemLoot">looted <a href="http://www.wowhead.com/item={{item.id}}" target="_blank">{{item.name}}</a> </span>
+                            <span ng-switch-when="itemPurchase">purchased <a href="http://www.wowhead.com/item={{item.id}}" target="_blank">{{item.name}}</a> </span>
+                            <span ng-switch-when="playerAchievement">earned the achievement <a href="http://www.wowhead.com/achievement={{item.achievement.id}}" target="_blank">{{item.achievement.title}}</a> </span>
+                            <span ng-switch-when="guildAchievement">earned the guild achievement <a href="http://www.wowhead.com/achievement={{item.achievement.id}}" target="_blank">{{item.achievement.title}}</a> </span>
+                        </span>
+                        on {{item.timestamp | date:'longDate'}} at {{item.timestamp | date:'shortTime'}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

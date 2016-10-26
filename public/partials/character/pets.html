@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Battle Pets</h3>
+        Battle Pets Collected: {{character.pets.numCollected}}<br>
+        Battle Pets Not Collected: {{character.pets.numNotCollected}}<br>
+
+         <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quality</th>
+                    <th>Level</th>
+                    <th>Health</th>
+                    <th>Power</th>
+                    <th>Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pet in character.pets.collected">
+                    <td><a href="http://www.wowhead.com/npc={{pet.creatureId}}">{{pet.creatureName}}</a></td>
+                    <td>
+                        <span ng-switch on="pet.qualityId">
+                            <span ng-switch-when="0" style="color: #888;">Poor</span>
+                            <span ng-switch-when="1" style="color: #FFF;">Common</span>
+                            <span ng-switch-when="2" style="color: #10B807;">Uncommon</span>
+                            <span ng-switch-when="3" style="color: #1C8EEE;">Rare</span>
+                            <span ng-switch-when="4" style="color: #C444EE;">Epic</span>
+                            <span ng-switch-when="5" style="color: #F70;">Legendary</span>
+                        </span>
+                    </td>
+                    <td>{{pet.stats.level}}</td>
+                    <td>{{pet.stats.health}}</td>
+                    <td>{{pet.stats.power}}</td>
+                    <td>{{pet.stats.speed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

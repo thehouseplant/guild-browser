@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Mounts</h3>
+        Mounts Collected: {{character.mounts.numCollected}}<br>
+        Mounts Not Collected: {{character.mounts.numNotCollected}}<br>
+
+        <div class="well col-md-2" ng-repeat="mount in character.mounts.collected" style="margin: 5px;">
+            <a href="http://www.wowhead.com/npc={{mount.creatureId}}" target="_blank">
+                <img ng-src="http://us.media.blizzard.com/wow/renders/npcs/grid/creature{{mount.creatureId}}.jpg"/>
+            </a>
+        </div>
+    </div>
+</div>

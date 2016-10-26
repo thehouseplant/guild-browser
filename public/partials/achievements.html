@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Guild Achievements</h3>
+        <div ng-show="loading">
+            <p class="text-center" style="margin-top:150px;">
+                <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </p>
+        </div>
+        <div ng-show="!loading">
+            <p>
+                Achievement Points: {{achievementPoints}}
+            </p>
+            <div>
+                <ul>
+                    <li ng-repeat="achievement in achievements | orderBy:'name'">
+                        <a href="http://www.wowhead.com/achievement={{achievement.id}}" target="_blank">{{achievement.name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,282 @@
+<div class="row">
+    <div class="col-md-9">
+        <h3>Equipment</h3>
+        <p>
+            Item Level: {{character.items.averageItemLevel}}<br>
+            Item Level (Equipped): {{character.items.averageItemLevelEquipped}}
+        </p>
+
+        <table class="table table-striped">
+            <tr>
+                <td>Back</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.back.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.back.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.back.name}}</td>
+                <td>{{character.items.back.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Chest</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.chest.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.chest.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.chest.name}}</td>
+                <td>{{character.items.chest.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Feet</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.feet.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.feet.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.feet.name}}</td>
+                <td>{{character.items.feet.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Finger</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.finger1.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.finger1.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.finger1.name}}</td>
+                <td>{{character.items.finger1.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Finger</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.finger2.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.finger2.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.finger2.name}}</td>
+                <td>{{character.items.finger2.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Hands</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.hands.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.hands.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.hands.name}}</td>
+                <td>{{character.items.hands.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Head</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.head.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.head.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.head.name}}</td>
+                <td>{{character.items.head.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Legs</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.legs.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.legs.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.legs.name}}</td>
+                <td>{{character.items.legs.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Mainhand</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.mainHand.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.mainHand.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.mainHand.name}}</td>
+                <td>{{character.items.mainHand.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Neck</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.neck.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.neck.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.neck.name}}</td>
+                <td>{{character.items.neck.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Shirt</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.shirt.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.shirt.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.shirt.name}}</td>
+                <td>{{character.items.shirt.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Shoulder</td>
+                <td><a href="http://www.wowhead.com/item={{character.items.shoulder.id}}" target="_blank"><img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.shoulder.icon}}.jpg" /></a></td>
+                <td>{{character.items.shoulder.name}}</td>
+                <td>{{character.items.shoulder.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Tabard</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.tabard.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.tabard.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.tabard.name}}</td>
+                <td>{{character.items.tabard.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Trinket</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.trinket1.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.trinket1.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.trinket1.name}}</td>
+                <td>{{character.items.trinket1.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Trinket</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.trinket2.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.trinket2.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.trinket2.name}}</td>
+                <td>{{character.items.trinket2.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Waist</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.waist.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.waist.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.waist.name}}</td>
+                <td>{{character.items.waist.itemLevel}}</td>
+            </tr>
+            <tr>
+                <td>Wrist</td>
+                <td>
+                    <a href="http://www.wowhead.com/item={{character.items.wrist.id}}" target="_blank">
+                        <img ng-src="http://us.media.blizzard.com/wow/icons/56/{{character.items.wrist.icon}}.jpg" />
+                    </a>
+                </td>
+                <td>{{character.items.wrist.name}}</td>
+                <td>{{character.items.wrist.itemLevel}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-md-3">
+        <h3>General</h3>
+        <div class="well">
+            Achievement Points: {{character.achievementPoints}}<br>
+            Honorable Kills: {{character.totalHonorableKills}}
+        </div>
+
+        <h3>Character Stats</h3>
+        <div class="well">
+            Agility: {{character.stats.agi}}<br>
+            Armor: {{character.stats.armor}}<br>
+            Attack Power: {{character.stats.attackPower}}<br>
+            Block: {{character.stats.block}}<br>
+            Block Rating; {{character.stats.blockRating}}<br>
+            Critical: {{character.stats.crit}}<br>
+            Critical Rating: {{character.stats.critRating}}<br>
+            Dodge: {{character.stats.dodge}}<br>
+            Dodge Rating: {{character.stats.dodgeRating}}<br>
+            Expertise: {{character.stats.expertiseRating}}<br>
+            Haste: {{character.stats.haste}}<br>
+            Haste Rating: {{character.stats.hasteRating}}<br>
+            Haste Rating (%): {{character.stats.hasteRatingPercent}}<br>
+            Health: {{character.stats.health}}<br>
+            Hit Percent: {{character.stats.hitPercent}}<br>
+            Hit Rating: {{character.stats.hitRating}}<br>
+            Intellect: {{character.stats.int}}<br>
+            Main Hand Max Damage: {{character.stats.mainHandDmgMax}}<br>
+            Main Hand Min Damage: {{character.stats.mainHandDmgMin}}<br>
+            Main Hand DPS: {{character.stats.mainHandDps}}<br>
+            Main Hand Expertise: {{character.stats.mainHandExpertise}}<br>
+            Main Hand Speed: {{character.stats.mainHandSpeed}}<br>
+            Mana: {{character.stats.mana5}}<br>
+            Mana (Combat): {{character.stats.mana5Combat}}<br>
+            Mastery: {{character.stats.mastery}}<br>
+            Mastery Rating: {{character.stats.masteryRating}}<br>
+            Off Hand Max Damage: {{character.stats.offHandDmgMax}}<br>
+            Off Hand Min Damage: {{character.stats.offHandDmgMin}}<br>
+            Off Hand DPS: {{character.stats.offHandDps}}<br>
+            Off Hand Expertise: {{character.stats.offHandExpertise}}<br>
+            Off Hand Speed: {{character.stats.offHandSpeed}}<br>
+            Parry: {{character.stats.parry}}<br>
+            Parry Rating: {{character.stats.parryRating}}<br>
+            Power: {{character.stats.power}}<br>
+            Power Type: {{character.stats.powerType}}<br>
+            PvP Power: {{character.stats.pvpPower}}<br>
+            PvP Power (Damage): {{character.stats.pvpPowerDamage}}<br>
+            PvP Power (Healing): {{character.stats.pvpPowerHealing}}<br>
+            PvP Power Rating: {{character.stats.pvpPowerRating}}<br>
+            PvP Resilience: {{character.stats.pvpResilience}}<br>
+            PvP Resilience Bonus: {{character.stats.pvpResilienceBonus}}<br>
+            PvP Resilience Rating: {{character.stats.pvpResilienceRating}}<br>
+            Ranged Attack Power: {{character.stats.rangedAttackPower}}<br>
+            Ranged Critical: {{character.stats.rangedCrit}}<br>
+            Ranged Critical Rating: {{character.stats.rangedCritRating}}<br>
+            Ranged Max Damage: {{character.stats.rangedDmgMax}}<br>
+            Ranged Min Damage: {{character.stats.rangedDmgMin}}<br>
+            Ranged DPS: {{character.stats.rangedDps}}<br>
+            Ranged Expertise: {{character.stats.rangedExpertise}}<br>
+            Ranged Haste: {{character.stats.rangedHaste}}<br>
+            Ranged Haste Rating: {{character.stats.rangedHasteRating}}<br>
+            Ranged Hit Percent: {{character.stats.rangedHitPercent}}<br>
+            Ranged Hit Rating: {{character.stats.rangedHitRating}}<br>
+            Ranged Speed: {{character.stats.rangedSpeed}}<br>
+            Spell Critical: {{character.stats.spellCrit}}<br>
+            Spell Critical Rating: {{character.stats.spellCritRating}}<br>
+            Spell Haste: {{character.stats.spellHaste}}<br>
+            Spell Haste Rating: {{character.stats.spellHasteRating}}<br>
+            Spell Hit Percent: {{character.stats.spellHitPercent}}<br>
+            Spell Hit Rating: {{character.stats.spellHitRating}}<br>
+            Spell Penetration: {{character.stats.spellPen}}<br>
+            Spell Power: {{character.stats.spellPower}}<br>
+            Spirit: {{character.stats.spr}}<br>
+            Stamina: {{character.stats.sta}}<br>
+            Strength: {{character.stats.str}}
+        </div>
+
+        <h3>Statistics</h3>
+        <div class="well">
+            <tr ng-repeat="category in statistics">
+                {{category.name}}
+            </tr>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Activity Feed</h3>
+        <ul class="fa-ul">
+            <li ng-repeat="item in character.feed | limitTo:25">
+                <p>
+                    <i class="fa fa-long-arrow-right"></i>
+                    <span ng-switch on="item.type">
+                        <span ng-switch-when="LOOT">Looted item #<a href="http://www.wowhead.com/item={{item.itemId}}" target="_blank">{{item.itemId}}</a> </span>
+                        <span ng-switch-when="BOSSKILL">Killed {{item.name}} </span>
+                        <span ng-switch-when="ACHIEVEMENT">Earned the achievement <a href="http://www.wowhead.com/achievement={{item.achievement.id}}" target="_blank">{{item.achievement.title}}</a> </span>
+                        <span ng-switch-when="CRITERIA">Earned the achievement <a href="http://www.wowhead.com/achievement={{item.achievement.id}}" target="_blank">{{item.achievement.title}}</a> </span>
+                    </span>
+                    on {{item.timestamp | date:'longDate'}} at {{item.timestamp | date:'shortTime'}}
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>

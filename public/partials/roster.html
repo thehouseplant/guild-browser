@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Guild Roster</h3>
+        <div ng-show="loading">
+            <p class="text-center" style="margin-top:150px;">
+                <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </p>
+        </div>
+        <div ng-show="!loading">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Race</th>
+                        <th>Class</th>
+                        <th>Level</th>
+                        <th>Guild Rank</th>
+                        <th>Achievement Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="member in members">
+                        <td><a ui-sref="character.general({characterName: member.character.name})">{{member.character.name}}</a></td>
+                        <td>
+                            <span ng-switch on="member.character.race">
+                                <span ng-switch-when="1">Human</span>
+                                <span ng-switch-when="2">Orc</span>
+                                <span ng-switch-when="3">Dwarf</span>
+                                <span ng-switch-when="4">Night Elf</span>
+                                <span ng-switch-when="5">Undead</span>
+                                <span ng-switch-when="6">Tauren</span>
+                                <span ng-switch-when="7">Gnome</span>
+                                <span ng-switch-when="8">Troll</span>
+                                <span ng-switch-when="9">Goblin</span>
+                                <span ng-switch-when="10">Blood Elf</span>
+                                <span ng-switch-when="11">Draenei</span>
+                                <span ng-switch-when="22">Worgen</span>
+                                <span ng-switch-when="24">Pandaren</span>
+                                <span ng-switch-when="25">Pandaren</span>
+                                <span ng-switch-when="26">Pandaren</span>
+                            </span>
+                        </td>
+                        <td>
+                            <span ng-switch on="member.character.class">
+                                <span ng-switch-when="1">Warrior</span>
+                                <span ng-switch-when="2">Paladin</span>
+                                <span ng-switch-when="3">Hunter</span>
+                                <span ng-switch-when="4">Rogue</span>
+                                <span ng-switch-when="5">Priest</span>
+                                <span ng-switch-when="6">Death Knight</span>
+                                <span ng-switch-when="7">Shaman</span>
+                                <span ng-switch-when="8">Mage</span>
+                                <span ng-switch-when="9">Warlock</span>
+                                <span ng-switch-when="10">Monk</span>
+                                <span ng-switch-when="11">Druid</span>
+                            </span>
+                        </td>
+                        <td>{{member.character.level}}</td>
+                        <td>{{member.rank}}</td>
+                        <td>{{member.character.achievementPoints}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
